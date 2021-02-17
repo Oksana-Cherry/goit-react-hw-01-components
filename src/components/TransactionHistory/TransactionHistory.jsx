@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "./TransactionHistory.module.css"
+import styles from "./TransactionHistory.module.css";
 
 /* {
     "id": "1e0700a2-5183-4291-85cc-2065a036a683",

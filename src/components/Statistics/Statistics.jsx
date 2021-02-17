@@ -1,6 +1,6 @@
 //import React from "react";
 import PropTypes from "prop-types";
-import styles from "./Statistics.module.css"
+import styles from "./Statistics.module.css";
 
   /*  const rondomBackgrounColor = () => {
     const color = 'rgb(' + (Math.floor((256 - 199) * Math.random()) + 200) + ',' +
@@ -23,18 +23,6 @@ const Statistics = ({ title, stats }) => (
           <span className={styles.percentage}>{stat.percentage}%</span>
         </li>
       ))}
-    {/*<li className="item">
-      <span className="label">.mp3</span>
-      <span className="percentage">14%</span>
-    </li>
-    <li className="item">
-      <span className="label">.pdf</span>
-      <span className="percentage">41%</span>
-    </li>
-    <li className="item">
-      <span className="label">.mp4</span>
-      <span className="percentage">12%</span>
-    </li>*/}
   </ul>
 </section>
 );
