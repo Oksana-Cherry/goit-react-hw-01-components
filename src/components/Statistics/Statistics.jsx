@@ -1,16 +1,26 @@
-import React from "react";
+//import React from "react";
 import PropTypes from "prop-types";
+import styles from "./Statistics.module.css"
 
-const Statistics = ({ title, stats  }) => (
+  /*  const rondomBackgrounColor = () => {
+    const color = 'rgb(' + (Math.floor((256 - 199) * Math.random()) + 200) + ',' +
+      (Math.floor((256 - 199) * Math.random()) + 200) + ',' +
+      (Math.floor((256 - 199) * Math.random()) + 200) + ')';
+   return {
+      background: `${rondomBackgrounColor(color)}`,
+    };
+  };// почемуууу((
+return (*/
+const Statistics = ({ title, stats }) => (
+
+    <section className={styles.statistics}>
+    {title && <h2 className={styles.title}>{title}</h2>}
     
-    <section className="statistics">
-    {title && <h2 className="title">{title}</h2>}
-    
-  <ul className="stat-list">
+  <ul className={styles.statList}>
       {stats.map(stat => (
-        <li className="item" key={stat.id}>
-          <span className="label">{stat.label}</span>
-          <span className="percentage">{stat.percentage}%</span>
+        <li className={styles.item} key={stat.id} >
+          <span className={styles.label}>{stat.label}</span>
+          <span className={styles.percentage}>{stat.percentage}%</span>
         </li>
       ))}
     {/*<li className="item">

@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styles from "./TransactionHistory.module.css"
+
 /* {
     "id": "1e0700a2-5183-4291-85cc-2065a036a683",
     "type": "invoice",
@@ -7,7 +9,7 @@ import PropTypes from "prop-types";
     "currency": "LRD"
   },*/ 
 const TransactionHistory = ({items}) => (
-    <table className="transaction-history">
+    <table className={styles.transaction_history}>
   <thead>
     <tr>
       <th>Type</th>
@@ -30,6 +32,7 @@ const TransactionHistory = ({items}) => (
   </tbody>
 </table>
 );
+
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({

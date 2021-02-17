@@ -1,18 +1,18 @@
 import React from "react";
 import PropTypes from 'prop-types';
-
+import styles from "./FriendList.module.css"
 //<ul class="friend-list">
  // <!-- Произвольное кол-во FriendListItem, в зависимости от кол-ва объектов в массиве -->
 //</ul>
 
 const FriendList = ({ friends }) => (
 
-  <ul className="friend-list">
+  <ul className={styles.friend_list}>
     {friends.map(({id, isOnline, avatar, name}) => (
-      <li className="item" key={id}>
-        <span className="status">{isOnline}</span>{/*isOnline?greey true : red false*/}
-         <img className="avatar" src={avatar} alt={name} width="48" />
-         <p className="name">{name}</p>
+      <li className={styles.item} key={id}>
+        <span className={isOnline? styles.statusOnline:styles.statusOffline}></span>{/*isOnline? green true : red false*/}
+         <img className={styles.avatar} src={avatar} alt={name} width="48" />
+        <p className={styles.name}>{name}</p>
       </li>
       ))}
   </ul> 
