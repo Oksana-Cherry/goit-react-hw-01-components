@@ -1,8 +1,8 @@
 //import React from "react";
-import PropTypes from "prop-types";
-import styles from "./Statistics.module.css";
+import PropTypes from 'prop-types';
+import styles from './Statistics.module.css';
 
-  /*  const rondomBackgrounColor = () => {
+/*  const rondomBackgrounColor = () => {
     const color = 'rgb(' + (Math.floor((256 - 199) * Math.random()) + 200) + ',' +
       (Math.floor((256 - 199) * Math.random()) + 200) + ',' +
       (Math.floor((256 - 199) * Math.random()) + 200) + ')';
@@ -12,19 +12,18 @@ import styles from "./Statistics.module.css";
   };// почемуууу((
 return (*/
 const Statistics = ({ title, stats }) => (
-
-    <section className={styles.statistics}>
+  <section className={styles.statistics}>
     {title && <h2 className={styles.title}>{title}</h2>}
-    
-  <ul className={styles.statList}>
+
+    <ul className={styles.statList}>
       {stats.map(stat => (
-        <li className={styles.item} key={stat.id} >
+        <li className={styles.item} key={stat.id}>
           <span className={styles.label}>{stat.label}</span>
           <span className={styles.percentage}>{stat.percentage}%</span>
         </li>
       ))}
-  </ul>
-</section>
+    </ul>
+  </section>
 );
 
 Statistics.propTypes = {
@@ -41,5 +40,5 @@ Statistics.propTypes = {
                 {colors.map((color) => (
                     <li key={color}>{color}</li>//key может быть index
                 ))}
-            </ul>*/ 
+            </ul>*/
 export default Statistics;

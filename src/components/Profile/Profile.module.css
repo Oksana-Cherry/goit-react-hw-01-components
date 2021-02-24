@@ -1,72 +1,66 @@
 html {
-	box-sizing: border-box;
-  }
-  
-  *,
-  *::before,
-  *::after {
-	box-sizing: inherit;
-	margin: 0;
-	padding: 0;
-  }
-
-.profile{
- 	width: 330px;
-    height: 330px;
-	text-align: center;
-	margin: auto;
-    border: solid 1px #d8e0ea;
-}
-.description{
-	width: 100%;
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: 400;
-    color: rgba(60, 62, 63, 0.5);
+  box-sizing: border-box;
 }
 
-.avatar{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.profile {
+  width: 330px;
+  height: 330px;
+  text-align: center;
+  margin: auto;
+  border: solid 1px #d8e0ea;
+}
+.description {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(60, 62, 63, 0.5);
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .name {
-    font-size: 20px;
-    font-weight: 400;
-    color: #2a2a2a;
-    margin-bottom: 10px;
-  
+  font-size: 20px;
+  font-weight: 400;
+  color: #2a2a2a;
+  margin-bottom: 10px;
 }
-.stats{
-	display: flex;
-	justify-content: space-evenly;
-    align-content:initial;
-    list-style: none;
-    background-color: #e6eef7;
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: initial;
+  list-style: none;
+  background-color: #e6eef7;
 }
-.stats li{
-    display: inline-block;
-    border: solid 1px grey;
-    width: 100%;
-    height: 60px;  
-}
-
-.label{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.quantity{
-    font-size: 16px;
-    display: flex;
-    justify-content: space-evenly; 
- 
+.stats li {
+  display: inline-block;
+  border: solid 1px grey;
+  width: 100%;
+  height: 60px;
 }
 
-
-
- 
+.label {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.quantity {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-evenly;
+}
