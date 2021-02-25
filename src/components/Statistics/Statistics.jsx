@@ -2,22 +2,19 @@
 import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
 
-/*  const rondomBackgrounColor = () => {
-    const color = 'rgb(' + (Math.floor((256 - 199) * Math.random()) + 200) + ',' +
-      (Math.floor((256 - 199) * Math.random()) + 200) + ',' +
-      (Math.floor((256 - 199) * Math.random()) + 200) + ')';
-   return {
-      background: `${rondomBackgrounColor(color)}`,
-    };
-  };// почемуууу((
-return (*/
+function getRandomColor() {
+  const color = function () {
+    return Math.floor(Math.random() * 256);
+  };
+  return 'rgb(' + color() + ',' + color() + ',' + color() + ')';
+}
 const Statistics = ({ title, stats }) => (
   <section className={styles.statistics}>
     {title && <h2 className={styles.title}>{title}</h2>}
 
     <ul className={styles.statList}>
       {stats.map(stat => (
-        <li className={styles.item} key={stat.id}>
+        <li className={styles.item} key={stat.id} style={{ backgroundColor: getRandomColor() }}>
           <span className={styles.label}>{stat.label}</span>
           <span className={styles.percentage}>{stat.percentage}%</span>
         </li>

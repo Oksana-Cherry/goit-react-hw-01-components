@@ -9,9 +9,7 @@ const FriendList = ({ friends }) => (
   <ul className={styles.friend_list}>
     {friends.map(({ id, isOnline, avatar, name }) => (
       <li className={styles.item} key={id}>
-        <span
-          className={isOnline ? styles.statusOnline : styles.statusOffline}
-        ></span>
+        <span className={isOnline ? styles.statusOnline : styles.statusOffline}></span>
         {/*isOnline? green true : red false*/}
         <img className={styles.avatar} src={avatar} alt={name} width="48" />
         <p className={styles.name}>{name}</p>
